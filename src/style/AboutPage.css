@@ -1,0 +1,121 @@
+.about-page {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding-left: 50px;
+    margin-bottom: 150px;
+}
+
+.about-page h4 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 50px;
+    color: #1B1A17;
+    margin-top: 100px;
+    /* Rimuove il margine superiore predefinito */
+    margin-left: 50px;
+}
+
+.about-page h5 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 50px;
+    color: #1B1A17;
+    margin-top: 50px;
+    /* Rimuove il margine superiore predefinito */
+    margin-left: 50px;
+}
+
+
+.about-page p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    color: #1B1A17;
+    margin-top: -40px;
+    /* Riduce lo spazio superiore */
+}
+
+#blob3Container {
+    position: absolute;
+    right: -473px;
+    top: -190px;
+}
+
+#blob3 {
+    height: 1100px;
+}
+
+
+#icona {
+    position: absolute;
+    right: 550px;
+    top: 450px;
+}
+
+@media (max-width: 992px) {
+    .about-page {
+        padding-top: 150px;
+        padding-left: 20px;
+        justify-content: center;
+        display: grid;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .navbar-link {
+        color: #1B1A17;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 12px 60px;
+        margin: 49px;
+        transition: color 0.3s;
+        position: relative;
+        top: -61px;
+        font-family: "Quicksand", sans-serif;
+        z-index: 2;
+    }
+
+    .navbar-link:hover {
+        color: #fff;
+        background-color: #1B1A17;
+    }
+
+    #icona {
+        height: 214px;
+        border-radius: 30px;
+        position: absolute;
+        top: 663px;
+        left: 348px;
+    }
+
+    #blob3Container {
+        position: absolute;
+        right: -21px;
+        top: -484px;
+    }
+
+    #blob3 {
+        height: 1000px;
+    }
+
+    .about-page h4 {
+        font-size: 100px;
+        margin-top: 466px;
+        margin-left: 29px;
+        text-align: left;
+    }
+
+    .about-page h5 {
+        font-size: 100px;
+        margin-top: 100px;
+        margin-left: 29px;
+        text-align: left;
+    }
+
+    .about-page p {
+        display: flex;
+        font-size: 50px;
+        margin: 29px;
+        margin-top: -193;
+    }
+
+}

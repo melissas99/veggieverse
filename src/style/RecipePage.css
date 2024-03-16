@@ -1,0 +1,102 @@
+.recipes-page {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding-left: 50px;
+}
+
+
+.recipe-title-page {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 319px;
+    margin-right: 800px;
+    margin-left: 50px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image-recipe {
+    height: 333px;
+    border-radius: 30px;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    animation: slideInFromLeft 1s ease-out forwards; 
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-top: -168px;
+    line-height: 1.9;
+    margin-right: 800px;
+    margin-left: 50px;
+}
+
+#blob2Container {
+    position: absolute;
+    right: -500px;
+    top: -200px;
+}
+
+#blob2 {
+    height: 1250px;
+}
+
+@media (max-width: 992px) {
+    .recipes-page {
+        padding-top: 150px;
+        padding-left: 20px;
+        justify-content: center;
+        display: grid;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .image-recipe {
+        height: 333px;
+        border-radius: 30px;
+        position: absolute;
+        top: 745px;
+        left: 241px;
+    }
+
+    #blob2Container {
+        position: absolute;
+        right: -21px;
+        top: -484px;
+    }
+
+    #blob2 {
+        height: 1049px;
+    }
+
+    .recipe-title-page {
+        font-size: 80px;
+        bottom: 259px;
+        margin-top: 906px;
+        margin-left: 29px;
+        margin-right: -51px;
+    }
+
+    p {
+        display: flex;
+        font-size: 50px;
+        margin: 29px;
+        margin-top: -193px;
+    }
+
+}
