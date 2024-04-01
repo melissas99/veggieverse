@@ -1,4 +1,3 @@
-// RecipePage.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -34,8 +33,10 @@ function RecipePage() {
                 <img className="image-recipe"
                     src={`https://spoonacular.com/recipeImages/${recipe.id}-636x393.jpg`} alt={recipe.title} />
             </div>
-            <h3 className="recipe-title-page">{recipe.title}</h3>
-            <p>{recipe.instructions}</p>
+            <div id="content">
+                <h3 className="recipe-title-page">{recipe.title}</h3>
+                <div dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
+            </div>
         </div>
     );
 }

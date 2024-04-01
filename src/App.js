@@ -5,17 +5,17 @@ import RecipePage from './pages/RecipePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 
+
+
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<SearchPage />} />
-          <Route path="/recipe/:id" element={<RecipePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/recipe/:id" element={<RecipePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </Router>
   );
 }

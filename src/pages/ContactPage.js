@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Navbar from '../components/Navbar';
 import '../style/ContactPage.css';
 
 const ContactPage = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Codice per gestire l'invio del modulo
-        // Puoi aggiungere qui la logica per inviare i dati del modulo a un backend o a un servizio di posta elettronica
+
+        emailjs.sendForm('service_gp8yu54', 'template_giom19z', event.target, 'IOMVpKTZDDmCT4VF_')
+            .then((result) => {
+                alert('Message sent');
+                setName('');
+                setEmail('');
+                setMessage('');
+            }, (error) => {
+                alert('error');
+            });
+
+
     };
 
     return (
@@ -17,15 +32,15 @@ const ContactPage = () => {
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" />
+                        <input value={name} onChange={(e) => setName(e.target.value)} type="text" id="name" name="name" required />
                     </div>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" />
+                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" name="email" required />
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" name="message" required></textarea>
                     </div>
                     <button type="submit">Send</button>
                 </form>

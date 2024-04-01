@@ -1,0 +1,33 @@
+#navbar {
+    padding-top: 25px;
+}
+
+.navbar-link {
+    color: #1B1A17;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 30px;
+    margin: 10px;
+    transition: color 0.3s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar-link:hover {
+    color: #fff;
+    background-color: #1B1A17;
+    border-radius: 50px;
+}
+
+@media (max-width: 1000px) {
+    .navbar-link {
+        font-size: 50px;
+        padding: 12px 60px;
+        margin: 14px;
+        z-index: 2;
+    }
+
+    .navbar-link:hover {
+        color: #fff;
+        background-color: #1B1A17;
+    }
+}
