@@ -38,10 +38,16 @@
     padding: 20px 20px;
     font-size: 20px;
     width: 100%;
-    border: #ffffff;
+    border: 2px solid transparent; 
+    box-sizing: border-box;
     border-radius: 50px;
     margin-top: 10px;
     box-sizing: border-box;
+}
+
+.contact-page #form form input:hover,
+.contact-page #form form input:focus {
+    border-color: #1B1A17; 
 }
 
 .contact-page #form form textarea {
@@ -52,41 +58,50 @@
     font-family: "Quicksand", sans-serif;
     border-radius: 25px;
     resize: vertical;
-    border: #ffffff;
+    border: 2px solid transparent; 
     box-sizing: border-box;
 }
 
-.contact-page #form form button {
+.contact-page #form form textarea:hover,
+.contact-page #form form textarea:focus {
+    border-color: #1B1A17; 
+}
+
+
+
+/* .contact-page #form form button {
     width: 50%;
     bottom: 119px;
     margin-left: 25%;
     background-color: #1B1A17;
     color: #ffffff;
-    /* border: 3px solid #1B1A17; */
     font-size: 20px;
     margin-top: 10px;
-}
-
-.contact-page #form form button:hover {
-    transform: translateY(-3px);
-    background-color: #ffffff;
-    color: #1B1A17;
-}
+} */
 
 .contact-page button {
     font-weight: bold;
+    width: 50%;
+    bottom: 119px;
+    border-color: transparent;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 25px;
     font-family: "Quicksand", sans-serif;
     padding: 20px 40px;
     background-color: #1B1A17;
-    border-color: #FFB534;
-    border: 2px;
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
-    font-weight: bold;
-    border: 2px solid transparent;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.6);
+    transition: all .7s;
+}
+
+.contact-page #form form button:hover {
+    box-shadow: 0px 45px 20px -30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    background-color: #ffffff;
+    color: #1B1A17;
 }
 
 
