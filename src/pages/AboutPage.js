@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
 import '../style/AboutPage.css';
 import blob3 from '../img/Ellipse 1.png'
@@ -7,6 +8,9 @@ import icona from '../img/icona.png'
 const AboutPage = () => {
     return (
         <div className="about-page">
+            <Helmet>
+                <title>About Page - VeggieVerse</title>
+            </Helmet>
             <Navbar />
             <div id='content'>
                 <h4>About Us</h4>

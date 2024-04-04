@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 import '../style/RecipePage.css';
 import blob2 from '../img/Ellipse 1.png'
 import Navbar from '../components/Navbar';
@@ -27,6 +28,9 @@ function RecipePage() {
 
     return (
         <div className="recipes-page">
+            <Helmet>
+                <title>Recipe Page - VeggieVerse</title>
+            </Helmet>
             <Navbar />
             <div id="blob2Container">
                 <img id="blob2" src={blob2} alt="blob2" />

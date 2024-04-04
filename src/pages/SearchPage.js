@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet'; 
 import '../style/SearchPage.css';
 import poke from '../img/poke.png'
 import blob from '../img/Ellipse 1.png'
@@ -14,7 +15,6 @@ function SearchPage() {
     const [errorMessage, setErrorMessage] = useState(null);
     const [searchParams, setSearchParams] = useSearchParams();
     const [isLoading, setIsLoading] = useState(false);
-
 
     useEffect(() => {
         const search = searchParams.get('search');
@@ -58,6 +58,9 @@ function SearchPage() {
 
     return (
         <div className="search-page">
+            <Helmet>
+                <title>Search Page - VeggieVerse</title>
+            </Helmet>
             <Navbar />
             <div id="blobContainer">
                 <img id="blob" src={blob} alt="blob" />

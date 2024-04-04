@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 import Navbar from '../components/Navbar';
 import '../style/ContactPage.css';
@@ -26,6 +27,9 @@ const ContactPage = () => {
 
     return (
         <div className="contact-page">
+            <Helmet>
+                <title>Contact Page - VeggieVerse</title>
+            </Helmet>
             <Navbar />
             <div id='form'>
                 <h1>Contact us</h1>
