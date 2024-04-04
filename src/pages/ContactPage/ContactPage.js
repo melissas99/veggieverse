@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
-import Navbar from '../components/Navbar';
-import '../style/ContactPage.css';
+import Navbar from '../../components/Navbar/Navbar';
+import  '../ContactPage/ContactPage.css';
 
 const ContactPage = () => {
     const [name, setName] = useState('');

@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import SearchPage from './pages/SearchPage';
-import RecipePage from './pages/RecipePage';
-import ContactPage from './pages/ContactPage';
-import AboutPage from './pages/AboutPage';
+import SearchPage from './pages/SearchPage/SearchPage';
+import RecipePage from './pages/RecipePage/RecipePage';
+import ContactPage from './pages/ContactPage/ContactPage';
+import AboutPage from './pages/AboutPage/AboutPage';
 
 function App() {
   return (

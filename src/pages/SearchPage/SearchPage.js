@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import { Helmet } from 'react-helmet'; 
-import '../style/SearchPage.css';
-import poke from '../img/poke.png'
-import blob from '../img/Ellipse 1.png'
-import spaghetti from '../img/spaghetti.png'
-import salad from '../img/salad1.png'
-import Navbar from '../components/Navbar';
+import '../SearchPage/SearchPage.css';
+import poke from '../../img/poke.png'
+import blob from '../../img/Ellipse 1.png'
+import spaghetti from '../../img/spaghetti.png'
+import salad from '../../img/salad1.png'
+import Navbar from '../../components/Navbar/Navbar';
 
 function SearchPage() {
     const [query, setQuery] = useState('');

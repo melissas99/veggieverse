@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Navbar from '../components/Navbar';
-import '../style/AboutPage.css';
-import blob3 from '../img/Ellipse 1.png'
-import icona from '../img/icona.png'
+import Navbar from '../../components/Navbar/Navbar';
+import '../AboutPage/AboutPage.css';
+import blob3 from '../../img/Ellipse 1.png'
+import icona from '../../img/icona.png'
 
 const AboutPage = () => {
     return (

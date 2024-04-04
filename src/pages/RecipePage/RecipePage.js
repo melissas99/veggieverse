@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
-import '../style/RecipePage.css';
-import blob2 from '../img/Ellipse 1.png'
-import Navbar from '../components/Navbar';
+import '../RecipePage/RecipePage.css';
+import blob2 from '../../img/Ellipse 1.png'
+import Navbar from '../../components/Navbar/Navbar';
 
 
 function RecipePage() {
