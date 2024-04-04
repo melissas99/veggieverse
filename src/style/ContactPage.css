@@ -25,6 +25,8 @@
     font-weight: bold;
     text-align: center;
     color: #1B1A17;
+    animation: slideInFromRight 1s ease-out forwards;
+
 }
 
 
